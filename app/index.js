@@ -1,6 +1,5 @@
 'use strict';
 
-var fs = require('fs');
 var pty = require('node-pty');
 var Term = require('xterm');
 
@@ -14,7 +13,7 @@ var shellOpts = {
   focusKeys: false,
   noEvents: false,
   useStyle: true,
-  // name: 'xterm-color',
+  name: 'xterm-color',
 };
 
 window.addEventListener('resize', function(){
